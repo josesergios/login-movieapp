@@ -1,7 +1,8 @@
 {
-  "name": "movieApp",
+  "name": "Ionic4FirbaseEmailLogin",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>COMPCOD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        Bem Vindo ao COMPCOD!
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        Seu E-mail Cadastrado : {{userEmail}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="secondary">
+    <ion-title>Sair</ion-title>
+  </ion-toolbar>
+</ion-footer>
