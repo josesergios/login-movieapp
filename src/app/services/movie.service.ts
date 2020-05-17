@@ -17,13 +17,12 @@ export enum SearchType {
 export class MovieService {
   url = 'http://www.omdbapi.com/';
   apiKey = 'b4bd9ace'; // <-- Enter your own key here!
-
   /**
    * Constructor of the Service with Dependency Injection
    * @param http The standard Angular HttpClient to make requests
    */
   constructor(private http: HttpClient) { }
-
+  
   /**
   * Get data from the OmdbApi
   * map the result to return only the results that we need
@@ -36,8 +35,7 @@ export class MovieService {
     return this.http.get(`${this.url}?s=${encodeURI(title)}&type=${type}&apikey=${this.apiKey}`).pipe(
       map(results => results['Search'])
     );
-  }
-
+  } 
   /**
   * Get the detailed information for an ID using the "i" parameter
   *
